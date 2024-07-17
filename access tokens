@@ -1,0 +1,11 @@
+#to create a token and accessing it from terminal
+
+Profilo -> Settings -> Developer settings
+
+Personal access tokens -> token classic
+
+generate new token (classic). Date un nome al token e spuntate tutte le case. Quando il token è stato generato, copiatelo subito da qualche parte
+
+git config --global credential.helper '!f() { sleep 1; echo "username=git token=<TOKEN>"; }; f'
+
+https://www.squash.io/how-to-authenticate-git-push-with-github-using-a-token/
